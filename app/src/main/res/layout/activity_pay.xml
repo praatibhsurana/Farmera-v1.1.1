@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ic_light_bg"
+    tools:context=".PayActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:textColorHighlight="#A3AD85"
+        android:cursorVisible="true"
+        android:textColorHint="#44564D"
+        android:textColor="#44564D"
+        android:fontFamily="@font/raleway_medium"
+        android:textSize="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/amount_et"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UPI ID"
+        android:textColorHint="#44564D"
+        android:textColor="#44564D"
+        android:textColorHighlight="#A3AD85"
+        android:cursorVisible="true"
+        android:fontFamily="@font/raleway_medium"
+        android:textSize="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/upi_id"
+        android:layout_below="@+id/amount_et"
+        android:text=""/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="#44564D"
+        android:textColor="#44564D"
+        android:textColorHighlight="#A3AD85"
+        android:cursorVisible="true"
+        android:fontFamily="@font/raleway_medium"
+        android:textSize="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/upi_id"
+        android:text=""/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:fontFamily="@font/raleway_medium"
+        android:textColorHint="#44564D"
+        android:textColor="#44564D"
+        android:textColorHighlight="#A3AD85"
+        android:cursorVisible="true"
+        android:textSize="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/note"
+        android:layout_below="@+id/name"
+        android:text=""/>
+
+    <android.widget.Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="send by upi"
+        android:background="@drawable/ic_black_btn"
+        android:textColor="#E3E7AF" />
+
+</LinearLayout>

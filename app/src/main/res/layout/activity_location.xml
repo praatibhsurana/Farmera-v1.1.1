@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFF1C5"
+    android:weightSum="7"
+    tools:context=".LocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|bottom">
+
+                <ImageView
+                    android:layout_width="165dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/ic_sickle_logo_green" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <android.widget.Button
+            android:id="@+id/mapbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_black_btn"
+            android:fontFamily="@font/raleway_medium"
+            android:onClick="getWeather"
+            android:text="Show me the weather"
+            android:textColor="#E3E7AF"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Weather details will appear here!"
+            android:textSize="16dp"
+            android:textColor="#44564D"
+            android:fontFamily="@font/raleway_medium"/>
+    </LinearLayout>
+
+
+</LinearLayout>
