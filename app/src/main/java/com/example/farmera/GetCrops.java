@@ -36,7 +36,7 @@ public class GetCrops extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
 
 
-        String URL = "https://github.com/praatibhsurana/Farmera/blob/main/crop_production.xls?raw=true";
+        String URL = "https://github.com/praatibhsurana/Farmera-v1.1.1/blob/farmera-v1/crop_production.xls?raw=true";
 
 
         //String apiURL = "https://bikashthapa01.github.io/excel-reader-android-app/";
